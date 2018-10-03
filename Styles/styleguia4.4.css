@@ -1,0 +1,27 @@
+  /* These styles will style our link
+   in all states */
+a {
+  color:black;
+  font-weight: bold;
+}
+
+/* We want visited links to be the same color
+   as non visited links */
+a:visited {
+  color: cadetblue;
+}
+
+/* We highlight the link when it is
+   hovered (mouse), activated
+   or focused (keyboard) */
+a:hover,
+a:active,
+a:focus {
+  color:cadetblue;
+  text-decoration: none;
+  font-family: fantasy
+}
+
+[href^=http]::after {
+  content: '⤴';
+}

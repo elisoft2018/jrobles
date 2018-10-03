@@ -1,0 +1,19 @@
+
+section p {
+    color: blue;
+    font-weight: bold;
+  }
+  
+  section > p {
+    background-color: yellow;
+  }
+  
+  h2 + p {
+    text-transform: uppercase;
+  }
+  
+  h2 ~ p {
+    border: 1px dashed black;
+  }
+  
+  

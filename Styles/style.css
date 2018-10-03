@@ -1,0 +1,19 @@
+/* estilo para todos los parrafos*/
+p:hover{
+    color:red;
+    font-style: italic;
+    font-weight: bold; 
+    font-size: 15px; 
+} 
+/* estilo para todos los images*/
+.imagen:hover {
+    filter:sepia(60%);
+  }
+
+/* estilo para todos los div's*/
+div{
+    color: blue;
+    
+  }
+
+    

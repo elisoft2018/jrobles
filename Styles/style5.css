@@ -1,0 +1,15 @@
+/* El elemento con la clase "first" está en negrita */
+.first {
+    font-weight: bold;
+    color: red;
+    font-family: 'Franklin Gothic Medium';
+    font-style: italic;
+  }
+  
+  /* Todos los elementos con la clase "done" están tachados */
+.done {
+    text-decoration: line-through;
+  
+}
+  
+  
