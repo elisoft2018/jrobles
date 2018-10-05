@@ -124,7 +124,7 @@ var funcionPalindromos = function (palabra) {
     for (var i = 0; i < arreglo1.length; i++) {
         for (var x =0 ; x <arreglo2.length;x++){
 
-            if (arreglo1 [i]==arreglo2[x]) {
+            if (arreglo1 [i]!=arreglo2[x]) {
                 
                 return resultado =true;
             }
