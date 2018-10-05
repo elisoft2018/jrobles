@@ -113,75 +113,26 @@ console.log("el resultado es = " + mifuncion("Juan", 3, 5));*/
 //ejercicio palindromos
 console.log("Verificar Palindromo")
 
-var funcionPalindromos = function (frase) {
-   
-    //convertir la frase ingresada en letra minuscula
-    console.log("Frase en minusculas");
-    var cadenaOriginal = frase.toLowerCase();
-    console.log(cadenaOriginal);
-    //se quitan los espacios de la frase
-    console.log("Frase en minusculas sin espacios");
-    cadenaOriginal.replace(/ /g, "");
-    /*console.log(cadenaOriginal);
-    //se crea el arreglo con los elementos que componen la frase
-    console.log("Arreglo de la frase  ingresada")
-    var arrayCadenaOriginal = cadenaOriginal.split('');
-    console.log(arrayCadenaOriginal);
-    //se genera el arreglo al reves 
-    console.log("Arreglo de la frase  ingresada al reves");
-    var arrayCadenaReves = cadenaOriginal.split('').reverse();
-    //arrayCadenaReves.reverse();
-    console.log(arrayCadenaReves);
-    //se declara variable inicilizada en true para manejar el resultado de la comparación
-     var resultado = true;
-     //se recorre el arreglo que se genera con la frase ingresada arrayCadenaOriginal
-     for (i in arrayCadenaOriginal) {
-        //se compara cada uno de los elementos 1-1 del arrayCadenaOriginal con los elementos del arrayCadenaReves.
-         if (arrayCadenaOriginal[i] == arrayCadenaReves[i]) {
-
-       
-
-         } else {
-
-         resultado = false;
-         }
-
-     }
-
-     if(resultado) {
-		resultado += " es un palindromo";
-	}
-	else {
-		resultado += " no es un palindromo";
-	}
-	
-    return resultado;
-    
-      /* //se recorre el arreglo que se genera con la frase ingresada arrayPalindromo
-    for (var i = 0; i <= arrayPalindromo.length; i++) {
-        // se recorre el arreglo arrayPalindromoReves reves  que se genero con la funcion reverse
-        for (var x = 0; x <= arrayPalindromoReves.length; x++) {
-            //se compara cada uno de los elementos del array inicial, frente al arreglo que se genero al reves arrayPalindromoReves
-            if (arrayPalindromo[i] == arrayPalindromoReves[x]) {
-
-                console.log("es palindromo");
-
-
-
-            } else {
-
-
-                console.log("es palindromo");
-
-            }
-
-
-        }
-
-
-
-
-    }*/
-
-    
+function esPalindromo(frase) {
+    //se eliminan los espacios de la frase
+    frase = frase.replace(/ /g, "");
+    //imprimo la frase,la cual quedo como una sola cadena de texto(palabra)
+    console.log(frase);
+    /*generamos un arreglo inverso de la frase, y lo concatenamos con join para que quede como una sola cadena de texto(palabra)
+     y poderlo comparar con la cadena que se generó al inicio cuando se eliminaron los espacios
+    .*/
+    var fraseInversa = frase.split("").reverse().join("");
+    //imprimo la frase inversa generada
+    console.log(fraseInversa);
+    //comparo si la palabra inicial es igual a la palabra inversa 
+    if (frase == fraseInversa) { 
+        console.log("La palabra '" + frase + "' SI es un palindromo");
+      //retorno verdadero para el casio afirmativo
+        return (true); 
+    } else {
+     
+        console.log("La palabra '" + frase + "' NO es un palindromo");
+        //retorno falso para el caso donde no lo es
+        return (false); 
+    }
 }
