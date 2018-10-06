@@ -111,8 +111,8 @@ console.log("el resultado es = " + mifuncion("Juan", 3, 5));*/
 
 
 //ejercicio palindromos
-console.log("Verificar Palindromo")
-
+console.log("Verificar Palindromo");
+//var frase=prompt("Digite la frase para verificar si es palindromo")
 function esPalindromo(frase) {
     //se eliminan los espacios de la frase
     frase = frase.replace(/ /g, "");
@@ -126,12 +126,18 @@ function esPalindromo(frase) {
     console.log(fraseInversa);
     //comparo si la palabra inicial es igual a la palabra inversa 
     if (frase == fraseInversa) { 
+        //imprimir en consola el mensaje con el resultado de la validación
         console.log("La palabra '" + frase + "' SI es un palindromo");
+        //Se muestra mensaje emergente con el resultado de la validación
+        //alert("La palabra '" + frase + "' SI es un palindromo");
       //retorno verdadero para el caso afirmativo
         return (true); 
     } else {
-     
+        //imprimir en consola el mensaje con el resultado de la validación
         console.log("La palabra '" + frase + "' NO es un palindromo");
+        //Se muestra mensaje emergente con el resultado de la validación.
+        //alert("La palabra '" + frase + "' NO es un palindromo");
+
         //retorno falso para el caso donde no lo es
         return (false); 
     }
