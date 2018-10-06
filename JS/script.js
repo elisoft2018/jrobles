@@ -127,7 +127,7 @@ function esPalindromo(frase) {
     //comparo si la palabra inicial es igual a la palabra inversa 
     if (frase == fraseInversa) { 
         console.log("La palabra '" + frase + "' SI es un palindromo");
-      //retorno verdadero para el casio afirmativo
+      //retorno verdadero para el caso afirmativo
         return (true); 
     } else {
      
