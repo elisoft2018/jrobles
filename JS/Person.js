@@ -10,34 +10,15 @@ function bornYear() {
 persona=new Person("jose",34);
 console.log("El Sr. "+persona.name+" naciò en "+persona.yearOfBirth()+" y tiene "+persona.age+" años de edad");*/
 
-/*var IntNumberOne= parseInt(prompt("Digite primer valor"));
-var IntNumberTwo= parseInt(prompt("Digite segundo valor"));
-var operacion=prompt("digite operacion +(Suma),-(resta),*(multplicación),/(Divisió)");
-alert(eval(IntNumberOne+IntNumberTwo+operacion));
 
-function operation (IntNumberOne,IntNumberTwo, ){
+function calcula(operacion){
+    var operando1 = document.calc.operando1.value
+    var operando2 = document.calc.operando2.value 
+    var result = eval(operando1 + operacion + operando2)
+    document.calc.resultado.value = result
+}
 
-    resultado=
-
-    /*if(operation=="+"){
-
-        let suma=IntNumberOne+IntNumberTwo;
-        alert(suma);
-    }else if(opera=="-"){
-        let resta=IntNumberOne-IntNumberTwo;
-        alert(resta);
-    }else if(opera=="*"){
-
-        let product=IntNumberOne-IntNumberTwo;
-        alert(product);
-    }else{
-
-        let division=IntNumberOne/IntNumberTwo;
-        alert(division);
-    }
-    
-}*/
-var pos=0;
+/*var pos=0;
 var box= document.getElementById("sobrepuesto");
 var t= setInterval(move,5);
 function move() {
@@ -48,4 +29,4 @@ function move() {
         pos+=1;
         box.style.left=pos+"px";
     }
-}
+}*/
